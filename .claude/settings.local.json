@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth:*)",
+      "Bash(git --version)",
+      "Bash(npm --version)",
+      "Bash(gh version:*)",
+      "Bash(where gh:*)",
+      "Bash(winget install:*)",
+      "Read(//c/Program Files/GitHub CLI//**)",
+      "Read(//c/Program Files \\(x86\\)/**)",
+      "Read(//c/Users/Lenovo/**)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "Bash(export PATH=\"/c/Program Files/GitHub CLI:$PATH\")",
+      "Bash(mv Velocar velocar-temp)",
+      "Bash(mv velocar-temp:*)",
+      "Bash(npx create-next-app@latest velocar-app --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "Bash(cp -r velocar-app/.git .)",
+      "Bash(cp -r velocar-app/src .)",
+      "Bash(cp -r velocar-app/public .)",
+      "Bash(npm install:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
