@@ -1,0 +1,66 @@
+const razones = [
+  {
+    icon: (
+      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+    ),
+    title: "Rapidez",
+    description: "Trabajamos con eficiencia para que no pierdas tu día.",
+  },
+  {
+    icon: (
+      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+      </svg>
+    ),
+    title: "Experiencia",
+    description: "Años de experiencia en mantenimiento de vehículos livianos.",
+  },
+  {
+    icon: (
+      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+      </svg>
+    ),
+    title: "Confianza",
+    description: "Te explicamos cada trabajo antes de hacerlo. Sin sorpresas.",
+  },
+  {
+    icon: (
+      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
+    title: "Precios justos",
+    description: "Cotización clara y honesta antes de empezar.",
+  },
+];
+
+export default function PorQueVelocar() {
+  return (
+    <section id="nosotros" className="bg-velocar-dark-alt py-20 sm:py-28">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-14">
+          <h2 className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl font-extrabold text-white mb-4">
+            ¿Por qué elegirnos?
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {razones.map((razon) => (
+            <div key={razon.title} className="text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-velocar-orange/10 text-velocar-orange mb-5">
+                {razon.icon}
+              </div>
+              <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold text-white mb-2">
+                {razon.title}
+              </h3>
+              <p className="text-gray-400">{razon.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
