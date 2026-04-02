@@ -65,7 +65,7 @@ export default function Servicios() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-14">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl font-extrabold text-velocar-dark mb-4">
+          <h2 className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl font-extrabold text-velocar-dark uppercase tracking-wider mb-4">
             Nuestros servicios
           </h2>
           <p className="text-gray-600 text-lg max-w-xl mx-auto">
@@ -78,10 +78,10 @@ export default function Servicios() {
           {servicios.map((servicio) => (
             <div
               key={servicio.title}
-              className="bg-white rounded-xl p-6 border-l-4 border-velocar-orange shadow-sm hover:shadow-md transition-shadow"
+              className="bg-white border border-gray-200 border-l-4 border-l-velocar-orange rounded-sm p-6 hover:bg-gray-50 transition-colors"
             >
               <div className="text-velocar-orange mb-4">{servicio.icon}</div>
-              <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold text-velocar-dark mb-2">
+              <h3 className="font-[family-name:var(--font-heading)] text-xl font-extrabold text-velocar-dark mb-2">
                 {servicio.title}
               </h3>
               <p className="text-gray-600">{servicio.description}</p>

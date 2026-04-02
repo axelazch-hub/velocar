@@ -40,7 +40,7 @@ export default function Navbar() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-velocar-orange hover:bg-orange-600 text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors"
+              className="bg-velocar-orange hover:bg-orange-600 text-white text-sm font-semibold px-5 py-2 rounded-md transition-colors"
             >
               Agendá tu cita
             </a>
@@ -80,7 +80,7 @@ export default function Navbar() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="block mt-2 text-center bg-velocar-orange hover:bg-orange-600 text-white font-semibold px-5 py-3 rounded-lg transition-colors"
+            className="block mt-2 text-center bg-velocar-orange hover:bg-orange-600 text-white font-semibold px-5 py-3 rounded-md transition-colors"
           >
             Agendá tu cita
           </a>
